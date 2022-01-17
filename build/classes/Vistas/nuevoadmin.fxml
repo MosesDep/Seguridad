@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="478.0" prefWidth="814.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.NuevoadminController">
+   <children>
+      <AnchorPane id="AnchorPane" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass">
+         <stylesheets>
+            <URL value="@editar_administrador.css" />
+         </stylesheets>
+         <children>
+            <ImageView fitHeight="488.0" fitWidth="804.0" layoutY="-10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../candado-cerrado-sobre-fondo-digital-seguridad-cibernetica_42077-1359.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="label30" layoutX="224.0" layoutY="14.0" text="Editar Datos del Administrador" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="label31" layoutX="47.0" layoutY="71.0" text="Ingrese Cedula " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt53" layoutX="171.0" layoutY="72.0" />
+            <Button fx:id="BuscarD6" layoutX="337.0" layoutY="72.0" mnemonicParsing="false" onAction="#buscar" text="Buscar Datos" />
+            <Label fx:id="label32" layoutX="200.0" layoutY="114.0" text="Datos a Editar" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txt54" layoutX="47.0" layoutY="155.0" promptText="Nombre" style="-fx-background-radius: 20;" />
+            <TextField fx:id="txt55" layoutX="256.0" layoutY="155.0" promptText="Apellido" style="-fx-background-radius: 20;" />
+            <TextField fx:id="txt56" layoutX="47.0" layoutY="201.0" promptText="Cedula" style="-fx-background-radius: 20;" />
+            <TextField fx:id="txt57" layoutX="256.0" layoutY="201.0" promptText="Telefono" style="-fx-background-radius: 20;" />
+            <TextField fx:id="txt58" layoutX="48.0" layoutY="245.0" prefHeight="25.0" prefWidth="353.0" promptText="Correo Electronico" style="-fx-background-radius: 20;" />
+            <TextField fx:id="txt59" layoutX="52.0" layoutY="290.0" prefHeight="25.0" prefWidth="353.0" promptText="Dirección" style="-fx-background-radius: 20;" />
+            <RadioButton fx:id="Radio7" layoutX="511.0" layoutY="114.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="77.0" style="-fx-background-color: white;" text="Masculino" />
+            <RadioButton fx:id="Radio8" layoutX="654.0" layoutY="116.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: white;" text="Femenino" />
+            <Label fx:id="label33" layoutX="576.0" layoutY="166.0" text="Ingrese Foto" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="botonfoto" layoutX="560.0" layoutY="205.0" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fx:id="imagen" fitHeight="103.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </Button>
+            <Button fx:id="GardarD6" layoutX="512.0" layoutY="398.0" mnemonicParsing="false" onAction="#guardar" prefHeight="27.0" prefWidth="77.0" style="-fx-background-radius: 10;">
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../1146209.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Guardar" />
+               </tooltip></Button>
+            <Button fx:id="Atras11" layoutX="716.0" layoutY="398.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="75.0" style="-fx-background-radius: 10;">
+               <graphic>
+                  <ImageView fitHeight="48.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../WhatsApp%20Image%202021-04-16%20at%2012.04.11%20PM.jpeg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Atras" />
+               </tooltip></Button>
+            <TextField fx:id="txt60" layoutX="150.0" layoutY="339.0" promptText="          Contraseña" style="-fx-background-radius: 20;" />
+            <Button fx:id="eliminar" layoutX="617.0" layoutY="373.0" mnemonicParsing="false" onAction="#eliminado" prefHeight="51.0" prefWidth="75.0" style="-fx-background-radius: 10;">
+               <graphic>
+                  <ImageView fitHeight="36.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Eliminar.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Eliminar" />
+               </tooltip></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

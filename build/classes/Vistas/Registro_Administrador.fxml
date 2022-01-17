@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="387.0" prefWidth="687.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.Registro_AdministradorController">
+    <stylesheets>
+        <URL value="@registro_administrador.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="482.0" fitWidth="830.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../SML26P1F1_112532.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="label28" layoutX="267.0" layoutY="20.0" text="Registro de Administrador" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt46" layoutX="73.0" layoutY="129.0" promptText="Nombre" style="-fx-background-radius: 20;" />
+      <TextField fx:id="txt47" layoutX="280.0" layoutY="129.0" promptText="Apellido" style="-fx-background-radius: 20;" />
+      <TextField fx:id="txt48" layoutX="73.0" layoutY="188.0" promptText="Cedula" style="-fx-background-radius: 20;" />
+      <TextField fx:id="txt49" layoutX="280.0" layoutY="188.0" promptText="Telefono" style="-fx-background-radius: 20;" />
+      <TextField fx:id="txt51" layoutX="76.0" layoutY="275.0" prefHeight="25.0" prefWidth="353.0" promptText="Correo Electronico" style="-fx-background-radius: 20;" />
+      <TextField fx:id="txt52" layoutX="76.0" layoutY="322.0" prefHeight="25.0" prefWidth="353.0" promptText="Dirección" style="-fx-background-radius: 20;" />
+      <DatePicker fx:id="Fecha3" layoutX="73.0" layoutY="375.0" prefHeight="25.0" prefWidth="150.0" promptText="Fecha de Nacimiento" />
+      <DatePicker fx:id="Fecha4" layoutX="279.0" layoutY="375.0" prefHeight="25.0" prefWidth="150.0" promptText="Fecha de Registro" />
+      <RadioButton fx:id="Radio5" layoutX="526.0" layoutY="108.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="77.0" style="-fx-background-color: white;" text="Masculino" />
+      <RadioButton fx:id="Radio6" layoutX="673.0" layoutY="109.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: white;" text="Femenino" />
+      <Button fx:id="bnt_I5" layoutX="587.0" layoutY="200.0" mnemonicParsing="false">
+         <graphic>
+            <ImageView fx:id="imagen" fitHeight="103.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true" />
+         </graphic>
+      </Button>
+      <Label fx:id="label29" layoutX="599.0" layoutY="162.0" text="Ingrese Foto" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="Rg4" layoutX="539.0" layoutY="397.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="75.0" style="-fx-background-radius: 10;">
+         <graphic>
+            <ImageView fitHeight="44.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../add.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Empty Tooltip" />
+         </tooltip></Button>
+      <Button fx:id="Atras10" layoutX="649.0" layoutY="397.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="65.0" style="-fx-background-radius: 10;">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../WhatsApp%20Image%202021-04-16%20at%2012.04.11%20PM.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Registrar" />
+         </tooltip></Button>
+      <TextField fx:id="txt50" layoutX="170.0" layoutY="231.0" promptText="          Contraseña" style="-fx-background-radius: 20;" />
+   </children>
+</AnchorPane>

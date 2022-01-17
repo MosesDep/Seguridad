@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="332.0" prefWidth="588.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.ReporteController">
+   <children>
+      <ImageView fitHeight="349.0" fitWidth="588.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../1500x844_sistema_informacion_seguridad.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="label" layoutX="206.0" layoutY="14.0" prefHeight="38.0" prefWidth="346.0" text="Reporte de imprevisto" textFill="#f2f2f2">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtarea" layoutY="110.0" prefHeight="135.0" prefWidth="273.0" />
+      <Button fx:id="boton_limpair" layoutX="61.0" layoutY="264.0" mnemonicParsing="false" onAction="#clear" prefHeight="47.0" prefWidth="75.0">
+         <graphic>
+            <ImageView fitHeight="49.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../escoba.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Limpiar Campos" />
+         </tooltip></Button>
+      <Button fx:id="boton_guardar" layoutX="180.0" layoutY="264.0" mnemonicParsing="false" onAction="#save" prefHeight="57.0" prefWidth="68.0">
+         <graphic>
+            <ImageView fitHeight="43.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../1146209.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Guardar" />
+         </tooltip></Button>
+      <TextField fx:id="txtcedula" layoutX="47.0" layoutY="72.0" prefHeight="25.0" prefWidth="249.0" promptText="Ingresa la Cedula" />
+      <Button fx:id="btn_Volver" layoutX="34.0" layoutY="18.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="55.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../WhatsApp%20Image%202021-04-16%20at%2012.04.11%20PM.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Regresar" />
+         </tooltip>
+      </Button>
+      <Button fx:id="buscar" layoutX="317.0" layoutY="72.0" mnemonicParsing="false" onAction="#buscador" prefHeight="25.0" prefWidth="134.0" text="Buscar Reporte" />
+      <Button fx:id="generar" layoutX="454.0" layoutY="72.0" mnemonicParsing="false" onAction="#generando" prefHeight="25.0" prefWidth="134.0" text="Generar Reporten" />
+      <TableView fx:id="tablon" layoutX="284.0" layoutY="110.0" prefHeight="213.0" prefWidth="305.0">
+        <columns>
+          <TableColumn fx:id="Cedula" prefWidth="75.0" text="Cedula" />
+            <TableColumn fx:id="Contingencia" prefWidth="154.0" text="Contingencia" />
+            <TableColumn fx:id="Fecha" prefWidth="75.0" text="Fecha" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

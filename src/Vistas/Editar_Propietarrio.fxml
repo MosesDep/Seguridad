@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="963.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.Editar_PropietarrioController">
+    <stylesheets>
+        <URL value="@editar_propietarrio.css" />
+    </stylesheets>
+   <children>
+      <ImageView fx:id="GuardarD2" fitHeight="606.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Editar.jpg" />
+         </image></ImageView>
+      <Label fx:id="label6" layoutX="354.0" layoutY="25.0" text="Editar Datos del Propietario" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label7" layoutX="37.0" layoutY="107.0" text="Introduzca Cedula" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt9" layoutX="205.0" layoutY="108.0" promptText="Buscar Propietario" style="-fx-background-radius: 20;" />
+      <Button fx:id="BuscarD3" layoutX="387.0" layoutY="108.0" mnemonicParsing="false" style="-fx-background-radius: 10;" text="Buscar Datos" />
+      <Label layoutX="213.0" layoutY="182.0" text="Datos a Editar " textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt10" layoutX="69.0" layoutY="224.0" prefHeight="25.0" prefWidth="200.0" promptText="              Nombre del Propietario " style="-fx-background-radius: 20;" />
+      <TextField fx:id="txt11" layoutX="290.0" layoutY="224.0" promptText="             Apellido" style="-fx-background-radius: 20;" />
+      <TextField fx:id="txt12" layoutX="94.0" layoutY="278.0" promptText="              Cedula " style="-fx-background-radius: 20;" />
+      <TextField fx:id="txt13" layoutX="290.0" layoutY="278.0" promptText="         Numero de Casa" style="-fx-background-radius: 20;" />
+      <TextField fx:id="txt14" layoutX="94.0" layoutY="331.0" promptText="             Telefono " style="-fx-background-radius: 20;" />
+      <TextField fx:id="txt15" layoutX="93.0" layoutY="377.0" prefHeight="25.0" prefWidth="343.0" promptText="Correo Electronico " style="-fx-background-radius: 20;" />
+      <Button fx:id="GuardarD3" layoutX="550.0" layoutY="502.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="87.0" style="-fx-background-radius: 10;">
+         <graphic>
+            <ImageView fitHeight="49.0" fitWidth="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../1146209.png" />
+               </image></ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Guardar" />
+         </tooltip></Button>
+      <Button fx:id="Atras5" layoutX="798.0" layoutY="502.0" mnemonicParsing="false" prefHeight="57.0" prefWidth="74.0" style="-fx-background-radius: 10;">
+         <graphic>
+            <ImageView fitHeight="41.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../WhatsApp%20Image%202021-04-16%20at%2012.04.11%20PM.jpeg" />
+               </image></ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Atras" />
+         </tooltip></Button>
+      <Button fx:id="btn_I2" layoutX="697.0" layoutY="192.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="136.0">
+         <graphic>
+            <ImageView fx:id="imagen" fitHeight="123.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="label8" layoutX="723.0" layoutY="136.0" text="Editar Foto" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtmovil" layoutX="290.0" layoutY="331.0" promptText="             Telefono " style="-fx-background-radius: 20;" />
+      <Button fx:id="Eliminar" layoutX="677.0" layoutY="459.0" mnemonicParsing="false" onAction="#eliminado" prefHeight="25.0" prefWidth="74.0" style="-fx-background-radius: 10;">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Eliminar.png" />
+               </image></ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Eliminar" />
+         </tooltip></Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="566.0" prefWidth="886.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.Editar_VisitasController">
+    <stylesheets>
+        <URL value="@editar_visitas.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="624.0" fitWidth="908.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Editar.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="label12" layoutX="364.0" layoutY="35.0" text="Editar Datos del Visitante" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label13" layoutX="47.0" layoutY="117.0" text="Introduzca Cedula" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt21" layoutX="215.0" layoutY="118.0" style="-fx-background-radius: 20;" />
+      <Button fx:id="BuscarD5" layoutX="397.0" layoutY="118.0" mnemonicParsing="false" style="-fx-background-radius: 10;" text="Buscar Datos" />
+      <Label fx:id="label14" layoutX="207.0" layoutY="193.0" text="Datos a Editar " textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="GuardarD5" layoutX="572.0" layoutY="498.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="96.0" style="-fx-background-radius: 10;">
+         <graphic>
+            <ImageView fitHeight="50.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../1146209.png" />
+               </image></ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Guardar" />
+         </tooltip></Button>
+      <Button fx:id="Atras8" layoutX="793.0" layoutY="498.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="96.0" style="-fx-background-radius: 10;">
+         <graphic>
+            <ImageView fitHeight="47.0" fitWidth="62.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../WhatsApp%20Image%202021-04-16%20at%2012.04.11%20PM.jpeg" />
+               </image></ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Atras" />
+         </tooltip></Button>
+      <TextField fx:id="txt22" layoutX="73.0" layoutY="258.0" promptText="              Nombre " style="-fx-background-radius: 20;" />
+      <TextField fx:id="txt23" layoutX="290.0" layoutY="258.0" promptText="             Apellido" style="-fx-background-radius: 20;" />
+      <TextField fx:id="txt24" layoutX="73.0" layoutY="312.0" promptText="              Cedula " style="-fx-background-radius: 20;" />
+      <TextField fx:id="txt25" layoutX="290.0" layoutY="312.0" promptText="             Telefono" style="-fx-background-radius: 20;" />
+      <RadioButton fx:id="RB" layoutX="290.0" layoutY="368.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Femenina" />
+      <RadioButton fx:id="RB2" layoutX="397.0" layoutY="368.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="85.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Masculino" />
+      <RadioButton fx:id="rbpie" layoutX="33.0" layoutY="433.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="A pie" />
+      <RadioButton fx:id="rbauto" layoutX="175.0" layoutY="433.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Automovil" />
+      <RadioButton fx:id="rbmoto" layoutX="33.0" layoutY="482.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Moto" />
+      <RadioButton fx:id="rbpesado" layoutX="175.0" layoutY="482.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Pesado" />
+      <TextField fx:id="txtnumero" layoutX="471.0" layoutY="258.0" promptText="  Numero de Casa" style="-fx-background-radius: 20;" />
+      <TextField fx:id="txtregistro" layoutX="471.0" layoutY="318.0" promptText="Cedula del registrante" style="-fx-background-radius: 20;" />
+      <Button fx:id="Eliminar" layoutX="678.0" layoutY="404.0" mnemonicParsing="false" onAction="#eliminado" prefHeight="45.0" prefWidth="94.0" style="-fx-background-radius: 10;">
+         <graphic>
+            <ImageView fitHeight="51.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Eliminar.png" />
+               </image></ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Eliminar" />
+         </tooltip></Button>
+   </children>
+</AnchorPane>

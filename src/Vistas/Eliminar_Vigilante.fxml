@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="391.0" prefWidth="752.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.Eliminar_VigilanteController">
+    <stylesheets>
+        <URL value="@eliminar_vigilante.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="391.0" fitWidth="958.0" layoutX="-57.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../getty_180859378_970647970450082_92420.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="label26" alignment="TOP_CENTER" layoutX="271.0" layoutY="-3.0" text="Eliminar Datos de vigilante" textFill="#f2f2f2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label27" alignment="TOP_CENTER" layoutX="101.0" layoutY="53.0" text="Introduzca Cedula" textFill="#f5f2f2">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt45" layoutX="238.0" layoutY="53.0" />
+      <Button fx:id="BuscarD2" layoutX="406.0" layoutY="53.0" mnemonicParsing="false" text="Buscar Vigilante" />
+      <Button fx:id="EliminarD" layoutX="345.0" layoutY="324.0" mnemonicParsing="false" text="Eliminar Datos" />
+      <Button fx:id="Atras3" layoutX="486.0" layoutY="324.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="59.0" text="Atras" />
+      <TableView fx:id="Tabla4" layoutX="238.0" layoutY="106.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="198.0" text="Datos del trabajador" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

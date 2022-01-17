@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="338.0" prefWidth="602.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.CreadoresController">
+   <children>
+      <ImageView fx:id="labl6" fitHeight="356.0" fitWidth="601.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../1500x844_sistema_informacion_seguridad.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="label" layoutX="119.0" layoutY="14.0" prefHeight="46.0" prefWidth="402.0" text="Diseñadores  del Sistema" textFill="#f8f5f5">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label fx:id="label2" layoutX="21.0" layoutY="106.0" prefHeight="17.0" prefWidth="174.0" text="Moises Gonzalez" textFill="#eeeded" />
+      <Label fx:id="label3" layoutX="258.0" layoutY="107.0" prefHeight="15.0" prefWidth="236.0" text="Contacto: 04262233967" textFill="#ebe7e7">
+         <font>
+            <Font name="Tahoma" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="label4" layoutX="12.0" layoutY="160.0" prefHeight="17.0" prefWidth="152.0" text="Juan Diego Sanchez " textFill="#f2efef" />
+      <Label fx:id="label5" layoutX="258.0" layoutY="161.0" prefHeight="17.0" prefWidth="134.0" text="Contacto   :04245404564" textFill="#f2eded" />
+      <Label fx:id="label6" layoutX="12.0" layoutY="219.0" prefHeight="17.0" prefWidth="126.0" text="Jesus Nuñez" textFill="#f8f5f5" />
+      <Label fx:id="label7" layoutX="258.0" layoutY="227.0" prefHeight="17.0" prefWidth="134.0" text="Contacto: " textFill="#f5f0f0" />
+      <Label fx:id="label8" layoutX="14.0" layoutY="264.0" text="Carlos Mendoza" textFill="#fffafa" />
+      <Label fx:id="label9" layoutX="264.0" layoutY="273.0" prefHeight="17.0" prefWidth="134.0" text="Contacto: " textFill="#fffafa" />
+      <ImageView fitHeight="34.0" fitWidth="73.0" layoutX="211.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../wasap.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="73.0" layoutX="211.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../wasap.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="73.0" layoutX="211.0" layoutY="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../wasap.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="73.0" layoutX="211.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../wasap.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_Volver" layoutX="30.0" layoutY="31.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="55.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../WhatsApp%20Image%202021-04-16%20at%2012.04.11%20PM.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="59.0" fitWidth="55.0" layoutX="392.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/138586025_3817239641630035_2442091243776202033_o.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="59.0" fitWidth="63.0" layoutX="508.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/139323553_173829924485537_2116144373627718620_n.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="59.0" fitWidth="63.0" layoutX="392.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/36150527f9193637e48262fd39613051.jpg" />
+         </image></ImageView>
+      <ImageView fitHeight="59.0" fitWidth="55.0" layoutX="508.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/descarga%20(23).jpg" />
+         </image></ImageView>
+   </children>
+</AnchorPane>

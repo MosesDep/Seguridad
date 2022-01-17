@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="362.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.TablaController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Seguridad_Internet-1000x600.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btn_Volver" layoutX="525.0" layoutY="22.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="55.0" style="-fx-background-color: transparent;">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../WhatsApp%20Image%202021-04-16%20at%2012.04.11%20PM.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="bitacorar" layoutX="86.0" layoutY="22.0" prefHeight="50.0" prefWidth="396.0" text="Bitacora Del Sistema" textAlignment="CENTER" textFill="#f5f2f2">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="pdf" layoutX="183.0" layoutY="79.0" mnemonicParsing="false" onAction="#descargarlo" prefHeight="170.0" prefWidth="202.0" style="-fx-border-color: black;">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="213.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../PDF.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

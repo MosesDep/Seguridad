@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="891.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.Registro_VigilanteController">
+    <stylesheets>
+        <URL value="@registro_vigilante.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="502.0" fitWidth="1000.0" layoutX="-2.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../1500x844_sistema_informacion_seguridad.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="label20" layoutX="331.0" layoutY="20.0" text="Registro de Vigilante" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="label21" layoutX="606.0" layoutY="103.0" text="Ingrese una Foto " textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt28" layoutX="53.0" layoutY="120.0" promptText="              Nombre " style="-fx-background-radius: 20;" />
+      <TextField fx:id="txt29" layoutX="244.0" layoutY="120.0" promptText="             Apellido" style="-fx-background-radius: 20;" />
+      <TextField fx:id="txt30" layoutX="53.0" layoutY="176.0" promptText="              Cedula " style="-fx-background-radius: 20;" />
+      <TextField fx:id="txt31" layoutX="244.0" layoutY="176.0" promptText="             Telefono" style="-fx-background-radius: 20;" />
+      <TextField fx:id="txt34" layoutX="53.0" layoutY="273.0" prefHeight="25.0" prefWidth="343.0" promptText="Dirección " style="-fx-background-radius: 20;" />
+      <TextField fx:id="txt35" layoutX="53.0" layoutY="329.0" prefHeight="25.0" prefWidth="343.0" promptText="Correo Electronico " style="-fx-background-radius: 20;" />
+      <TextField fx:id="txt32" layoutX="53.0" layoutY="224.0" promptText="                  RIF" style="-fx-background-radius: 20;" />
+      <Button fx:id="bnt_I3" layoutX="623.0" layoutY="171.0" mnemonicParsing="false" prefHeight="128.0" prefWidth="136.0">
+         <graphic>
+            <ImageView fx:id="imagen" fitHeight="123.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../SEPRYTEC-guardias-de-seguridad.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="Rg1" layoutX="285.0" layoutY="440.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="108.0" style="-fx-background-radius: 20;">
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../add.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Guardar" />
+         </tooltip></Button>
+      <Button fx:id="Atras1" layoutX="469.0" layoutY="440.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="108.0" style="-fx-background-radius: 20;">
+         <graphic>
+            <ImageView fitHeight="37.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../WhatsApp%20Image%202021-04-16%20at%2012.04.11%20PM.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Atras" />
+         </tooltip></Button>
+      <TextField fx:id="txt33" layoutX="244.0" layoutY="224.0" promptText="          Contraseña" style="-fx-background-radius: 20;" />
+      <DatePicker fx:id="fecha1" layoutX="46.0" layoutY="387.0" />
+      <DatePicker fx:id="fecha2" layoutX="237.0" layoutY="387.0" />
+      <RadioButton fx:id="radiohombre" layoutX="426.0" layoutY="220.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Hombre" textFill="#fcf5f5">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="radiomujer" layoutX="426.0" layoutY="277.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="74.0" text="Mujer" textFill="#f5f0f0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>
